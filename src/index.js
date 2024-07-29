@@ -31,8 +31,6 @@ function addExpense(expense, description, type) {
 }
 
 function editExpense(button) {
-    //const expenseItem = button.parentElement.parentElement;
-    //const [expense, description, type] = expenseItem.querySelector('div').innerText.split(' ').map(e => e.split(':')[1]);
     let expense = document.getElementById('expense').value
     let description = document.getElementById('description').value
     let type = document.getElementById('type').value
