@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 33, 124); 
+    color: white;
+    margin: 1rem auto;
+    padding: 0.25rem;
+    border-radius: 0.750rem;
+    width:90%  
+}
+
+#add-btn{
+    all: unset;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem auto;
+    padding: 0.1rem 0.5rem;
+    background-color: rgb(6, 6, 189);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+#close-btn{
+    all:unset;
+    width: 1rem;
+    margin: 0 94%;
+    
+}
+#close-btn:hover{
+    color: red;
+}
+#add-btn:hover {
+    background-color: rgb(4, 4, 228);
+}
+
+form{
+    border: 0.050rem solid rgb(207, 205, 205);
+    display: none;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+label{
+    display: flex;
+    color: rgb(170, 167, 167);
+    font-size: 0.875rem;
+    margin: auto 1.125rem;
+}
+label:hover{
+    color: black;
+}
+
+input{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 0.250rem;
+    width: 90%;
+}
+
+
+#submit-btn{
+    all: unset;
+    
+    background-color: rgb(2, 105, 2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0.250rem auto;
+    padding: 0.10rem 0.5rem;
+    border-radius: 0.50rem;
+}
+
+#submit-btn:hover{
+    background-color: green;
+}
+ul{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: stretch;
+    border: 0.05rem solid gray;
+
+}
+
+li{
+    list-style: none;
+    text-align: start;
+    width: 25%;
+}

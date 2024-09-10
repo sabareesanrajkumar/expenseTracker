@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<TITLE>Expense Tracker</TITLE>
+<HEAD>
+    <link rel="stylesheet" href="/index.css"></link>
+    
+</HEAD>
+<body>
+    <script src="/index.js"></script>
+    <div class="header">
+        <h1>Expense Tracker</h1>
+        <div class="header-nav"></div>
+    </div>
+    <button onclick = openForm() id="add-btn">Add Expense</button>
+    <div>
+        <form for = 'Expense Tracker' onsubmit=formSubmit()>
+            <button type = "button" id="close-btn" onclick = closeForm() style = 'margin-right: 0%;'>x</button>
+            <label for = 'amount' >Cost:</label>
+            <input type="number" name = 'amount' id="amount" required>
+            <label for = 'description'>Description:</label>
+            <input type="text" name = 'description' id="description">
+            <label for = 'type'>Type:</label>
+            <input type="text" name = 'type' id="type">
+            <button type = "submit" id="submit-btn">SAVE</button>
+            
+        </form>
+    </div>
+    
+    <div class="expenserecord">
+
+    </div>
+
+</body>
+</HTML>
