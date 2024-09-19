@@ -1,33 +1,35 @@
-<!DOCTYPE HTML>
-<TITLE>Expense Tracker</TITLE>
-<HEAD>
-    <link rel="stylesheet" href="/index.css"></link>
-    
-</HEAD>
+<!DOCTYPE html>
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
 <body>
-    <script src="/index.js"></script>
-    <div class="header">
-        <h1>Expense Tracker</h1>
-        <div class="header-nav"></div>
-    </div>
-    <button onclick = openForm() id="add-btn">Add Expense</button>
-    <div>
-        <form for = 'Expense Tracker' onsubmit=formSubmit()>
-            <button type = "button" id="close-btn" onclick = closeForm() style = 'margin-right: 0%;'>x</button>
-            <label for = 'amount' >Cost:</label>
-            <input type="number" name = 'amount' id="amount" required>
-            <label for = 'description'>Description:</label>
-            <input type="text" name = 'description' id="description">
-            <label for = 'type'>Type:</label>
-            <input type="text" name = 'type' id="type">
-            <button type = "submit" id="submit-btn">SAVE</button>
-            
-        </form>
-    </div>
+  <h2>Expense Tracker</h2>
+  <button onclick="" id="addExpense">Add Expense</button>
+  <form id="dataForm">
+    <button id="closeBtn">x</button>
+    <input type="hidden" id="recordId" name="recordId"> 
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount"  name="amount" required>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required>
+    <label for="type">Type:</label>
+    <select name="type" id="type">
+        <option value="" disabled selected>Select type</option>
+        <option value="Health Care">Health Care</option>
+        <option value="Transportation">Transportation</option>
+        <option value="Utilities">Utilities</option>
+        <option value="Entertainment">Entertainment</option>
+    </select>
+    <button type="submit">Submit</button>
     
-    <div class="expenserecord">
+  <script src="index.js"></script>
+  </form>
 
-    </div>
+  <h2>Expense Data</h2>
+  <div id="dataDisplay"></div>
 
+  
 </body>
-</HTML>
+</html>
